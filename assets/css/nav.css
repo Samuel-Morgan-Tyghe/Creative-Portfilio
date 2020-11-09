@@ -1,0 +1,22 @@
+.site-header {
+    margin-top: 25% ;
+    position: fixed;
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.wrapper{   
+    display: flex;
+    flex-direction: column;
+}
+.site-nave{
+    display: flex;
+    flex-direction: column;
+}
+
+.trigger  {
+display: flex;
+flex-direction: column;
+}

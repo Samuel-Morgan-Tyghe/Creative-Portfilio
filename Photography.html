@@ -1,0 +1,19 @@
+---
+layout: imageview
+title:  "Photography"
+---
+
+<!-- <a href="/assets\img\album-artwork\a1139842111_10.jpg" >
+  <img src="/assets\img\album-artwork\a1139842111_10.jpg" alt="art" />
+</a> -->
+
+<!-- {{ site.static_files | jsonify }} -->
+
+
+
+
+    {% for image in site.static_files %}
+    {% if image.path contains 'assets/img/photography' %}
+    <img src="{{ site.baseurl }}{{ image.path }}" width="620" alt="image" /><br>
+    {% endif %}
+{% endfor %}
