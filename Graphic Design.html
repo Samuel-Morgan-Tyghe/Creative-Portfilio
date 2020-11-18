@@ -1,0 +1,19 @@
+---
+layout: imageview
+title:  "Graphic-Design"
+---
+
+<!-- <a href="/assets\img\album-artwork\a1139842111_10.jpg" >
+  <img src="/assets\img\album-artwork\a1139842111_10.jpg" alt="art" />
+</a> -->
+
+<!-- {{ site.static_files | jsonify }} -->
+
+
+
+
+    {% for image in site.static_files %}
+    {% if image.path contains 'assets/img/graphic-design' %}
+    <img src="{{ site.baseurl }}{{ image.path }}" alt="Various graphic Design Images" /><br>
+    {% endif %}
+{% endfor %}

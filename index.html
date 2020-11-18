@@ -1,0 +1,17 @@
+---
+layout: page
+title: Creative Portfolio
+---
+<script  type="text/javascript" src="assets/Js/random.js"></script>
+<link rel="stylesheet" href="assets\css\additional.css">
+
+
+<div class="outerRandomImage">
+
+{% for image in site.static_files %}
+{% if image.path contains 'assets/img/homepage' %}
+    <img class='random' src="{{ site.baseurl }}{{ image.path }}"  alt="Album Artwork" />
+{% endif %}
+{% endfor %}
+
+</div>
