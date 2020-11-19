@@ -1,8 +1,13 @@
 ---
 layout: imageview
-title:  Album Artwork
+title:  Album-Artwork
 
 ---
+
+
+
+
+
 
 
     {% for image in site.static_files %}
@@ -10,3 +15,6 @@ title:  Album Artwork
         <img src="{{ site.baseurl }}{{ image.path }}"  alt="Album Artwork" />
     {% endif %}
 {% endfor %}
+
+
+
